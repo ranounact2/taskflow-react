@@ -1,13 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { AuthProvider } from './components/auth/AuthContext'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client'; // Import manquant souvent oublié
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './components/auth/AuthContext';
+import App from './App'; // Import de ton composant App
+import './index.css'; // Si tu as un fichier CSS global
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AuthProvider>
-      <App />
-    </AuthProvider>
-  </StrictMode>,
+    <BrowserRouter>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </BrowserRouter>
+  </StrictMode>
 );

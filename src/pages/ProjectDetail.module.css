@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.loading {
+    padding: 2rem;
+    text-align: center;
+}

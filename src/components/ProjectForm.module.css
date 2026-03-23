@@ -1,0 +1,74 @@
+.form {
+  display: flex;
+  flex-direction: column; /* Organise en colonne */
+  gap: 12px;              /* Espacement entre les éléments */
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* .input : style général des champs texte */
+.inputName {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Focus vert */
+.inputName:focus {
+  border-color: #2ecc71; /* Vert */
+}
+
+/* .colorPicker : 40x36, pas de bordure */
+.inputColor {
+  width: 40px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* .submit : fond vert, texte blanc */
+.submitBtn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submitBtn:hover {
+  background-color: #27ae60;
+}
+
+/* .cancel : fond gris */
+.cancelBtn {
+  background-color: #bdc3c7; /* Gris */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background-color: #95a5a6;
+}
